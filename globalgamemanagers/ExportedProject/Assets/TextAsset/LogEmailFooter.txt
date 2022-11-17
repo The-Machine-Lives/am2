@@ -1,0 +1,46 @@
+					<div id="bottom-padding"></div>
+			    </div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="device-info-tab">
+		    	<div class="container">
+			    	<div class="row">
+			    		<div class="col-md-6">
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h3 class="panel-title">General Information</h3>
+								</div>
+								<!-- GENERAL INFORMATION -->
+							</div>
+
+							<div class="panel panel-primary" id="game-info-panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Game Information</h3>
+								</div>
+								<!-- GAME INFORMATION -->
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h3 class="panel-title">Hardware Information</h3>
+								</div>
+								<!-- HARDWARE INFORMATION -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		    <div role="tabpanel" class="tab-pane" id="screenshot-tab">
+		    	<!-- SCREENSHOT -->
+			</div>
+			<div role="tabpanel" class="tab-pane" id="save-file-tab">
+				<div class="panel-group" id="accordion">
+					<!-- SAVE FILE -->
+				</div>
+			</div>
+		  </div>
+
+		</div>
+
+    </body>
+</html>

@@ -1,0 +1,140 @@
+{
+  "abTests": [
+    {
+      "name": "jingot_test",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "jingot_test_CONTROL",
+          "default": true,
+          "weight": 1
+        },
+        {
+          "name": "jingot_test_ON",
+          "default": false,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    },
+    {
+      "name": "persistent_ad_notification",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "persistent_ad_notification_CONTROL",
+          "default": false,
+          "weight": 1
+        },
+        {
+          "name": "persistent_ad_notification_ON",
+          "default": true,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    },
+    {
+      "name": "mini_events_v1",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "mini_events_v1_CONTROL",
+          "default": true,
+          "weight": 1
+        },
+        {
+          "name": "mini_events_v1_ON",
+          "default": false,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    },
+    {
+      "name": "daily_lto_reward_increase_v1",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "daily_lto_reward_increase_v1_CONTROL",
+          "default": true,
+          "weight": 1
+        },
+        {
+          "name": "daily_lto_reward_increase_v1_ON",
+          "default": false,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    },
+    {
+      "name": "starter_bundle_price_increase_v1",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "starter_bundle_price_increase_v1_CONTROL",
+          "default": true,
+          "weight": 1
+        },
+        {
+          "name": "starter_bundle_price_increase_v1_ON",
+          "default": false,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    },
+    {
+      "name": "lto_cosmetics_v1",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "lto_cosmetics_v1_CONTROL",
+          "default": true,
+          "weight": 1
+        },
+        {
+          "name": "lto_cosmetics_v1_ON",
+          "default": false,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    },
+    {
+      "name": "mini_events_fixed_v1",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "mini_events_fixed_v1_CONTROL",
+          "default": true,
+          "weight": 1
+        },
+        {
+          "name": "mini_events_fixed_v1_ON",
+          "default": false,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    },
+    {
+      "name": "chest_volatility_v1",
+      "entityType": "USER",
+      "abGroups": [
+        {
+          "name": "chest_volatility_v1_CONTROL",
+          "default": true,
+          "weight": 1
+        },
+        {
+          "name": "chest_volatility_v1_ON",
+          "default": false,
+          "weight": 1
+        }
+      ],
+      "abFilters": []
+    }
+  ]
+}

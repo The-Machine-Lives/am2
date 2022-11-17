@@ -1,0 +1,1828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{5BB7E9B2-DAAC-E6A6-6D4C-F52FF86D00FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_11;UNITY_2018_4;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;NET_LEGACY;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.4.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.4.11f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AbilityController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AbilityEffectController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AbilityItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AbilitySlotView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AbilityTraitView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AbilityUpdateResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AbilityView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ActionExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ActionRef.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ActionSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ActionSceneView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AdConfigItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AdLoader.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AdsItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AIActorController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AIFightActorView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltBaseCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltClientSocketHandler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltIClientSocketHandlerDelegate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltPopIconDrag.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltResponseQueue.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltSocketClientThreadHolder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltSocketServer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltTcpListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityAxis.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityBaseFindObjects.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityCallComponentMethod.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityCallStaticMethods.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityCheckServerVersion.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityClickEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityCommandReturningAltElement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityComponent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityDeleteKeyPlayerPref.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityDeletePlayerPref.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityDragObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityDriver.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityDropObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityEnableLogging.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityField.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindElement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindElementByComponent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindElements.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindElementsByComponent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindElementsWhereNameContains.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindElementWhereNameContains.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindObjects.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindObjectsWhichContain.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityFindObjectWhichContains.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetAllCameras.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetAllComponents.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetAllElements.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetAllMethods.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetAllProperties.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetAllScenes.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetAllScenesCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetComponentProperty.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetCurrentScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetFloatKeyPlayerPref.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetIntKeyPLayerPref.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetPNGScreenshot.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetScreenshot.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetStringKeyPlayerPref.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetText.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityGetTimeScale.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityInputMark.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityInputsVisualiser.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityLoadScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityMethodSelection.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityMockUpPointerInputModule.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityMoveMouse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityMoveMouseAndWait.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityObjectAction.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityObjectProperty.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityPointerDownFromObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityPointerEnterObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityPointerExitObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityPointerUpFromObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityPressKey.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityPressKeyAndWait.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityProperty.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityRunner.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityScreenshotPNGReadyCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityScrollMouse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityScrollMouseAndWait.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnitySetComponentProperty.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnitySetKeyPLayerPref.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnitySetText.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnitySetTimeScale.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityStopCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnitySwipe.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnitySwipeAndWait.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityTap.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityTapCustom.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityTapScreen.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\altunitytester\Assets\AltUnityTester\AltUnityServer\AltUnityGetCurrentSceneCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityTextureInformation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityTextureScale.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityTilt.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityTiltAndWait.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForCurrentSceneToBe.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForElement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForElementToNotBePresent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForElementWhereNameContains.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForElementWithText.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForObjectNotBePresent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForObjectWhichContains.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AltUnityWaitForObjectWithText.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Ability.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\AbilityEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\AbilityGroup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\AbilityTraitDisplay.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ActionScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ActionSceneRuntimeDataCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\AM2DataStore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\AM2DataStoreController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\AM2DataStoreModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\AutoConversion.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Badge.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\BanCondition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\BIUserProfiler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Buff.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\BundleScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Choice.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ChoiceScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\CodeButtonCombo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Condition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\CostResource.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Credits.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\DiffHealth.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Dye.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\DynamicAds.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EAbilityBehavior.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EAbilityEffectType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EActionSceneType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EBanType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ECodeButtonIndex.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EEquipmentEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EFormulaType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Encounter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Equipment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EquipmentEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EStatusNumericDisplay.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ETargetType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EUnlockType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\EventQuest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\FightScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ForceClearInventory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Formula.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\FormulaDataCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\GlobalLeaderboard.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\GlobalScaler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\HealthType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\IAbilityEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\IActionScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\IDustable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\InboxMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\InventoryDefaults.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\IReferenceable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\IStatusEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ISubTabItemModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ItemConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\LTOGroups.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\MiniEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Monster.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Power.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\PrestigeLevel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\PrestigeLevelUpRewards.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\PrestigePermanentItems.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Prestiges.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\PrestigeSystem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Products.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Quest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\QuestScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\QuestSystem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDAbility.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDAbilityEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDAbilityGroup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDActionScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDAutoConversion.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDBadge.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDBanCondition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDBuff.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDBundleScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDCatalogueItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDChoice.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDChoiceScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDCodeButtonCombo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDCondition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDCostResource.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDCredits.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDDiffHealth.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDDye.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDDynamicAds.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDEncounter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDEquipment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDEquipmentEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDEventQuest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDFightScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDForceClearInventory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDFormula.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDGlobalLeaderboard.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDGlobalScaler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDHealthType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDInboxMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDInventoryDefault.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDItemConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDLTOGroups.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDMetaDataItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDMiniEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDMonster.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDPower.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDPrestigeLevel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDPrestigeLevelUpRewards.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDPrestigePermanentItems.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDPrestiges.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDPrestigeSystem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDQuest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDQuestScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDQuestSystem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDRecipe.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDRegent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDResearchable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDResearchSystem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDSection.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDSpeedBooster.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDSpeedBoosterReward.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDStoryLog.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDSubstance.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDSubTab.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDTab.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDTag.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDTask.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDTextScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDTitle.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDTitleConnector.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDUnlocker.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDUpgradable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDUserInventoryItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDVIPStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RDZone.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Recipe.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ReferenceableHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Regent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ResearchableRuntimeData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\ResearchSystem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeAbilitiesCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeAbilityGroupsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeBuffsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeChoiceScenesCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeCostResourceCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeEncountersCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeEventQuestsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeFightScenesCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeItemConverterCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeMonstersCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimePrestigeLevelUpRewardsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimePrestigePermanentItemsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimePrestigesCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeQuestsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeRecipesCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeResearchableDataCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeTasksCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeUnlockersCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeUpgradablesCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\RuntimeZonesCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Section.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\SpeedBoostComp.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\SpeedBooster.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\SpeedBoosterReward.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\StoryLog.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\StoryLogsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Substance.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\SubTab.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Tab.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Tag.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Task.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\TextScene.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Title.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\TitleConnector.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Unlocker.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Upgradable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\VIPStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\ReferenceData\Zone.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\SharedDataCacheController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2\UIAlertController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2AdjustEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2AnalogContext.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2AnimationButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2Button.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2ButtonImage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2ColorPaletteDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2Environment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2FontPaletteDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2Game.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2Image.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2ImagePaletteDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2Int.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2InventoryController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2PaletteDatabase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2PaletteManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2ScrollBar.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2Slider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2SoundController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2Text.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2TextDisplayController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2TextFormatter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AM2TextWithHyperlink.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AmmoTextUpdater.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AnimationView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AnimData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AppleCredentialRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AppleLinkRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AppleUnlinkRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\AltUnityException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityMultipointSwipe.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\Commands\InputActions\AltUnityMultipointSwipeAndWait.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\ComponentNotFoundException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\CouldNotParseJsonStringException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\CouldNotPerformOperationException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\FailedToParseArgumentsException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\FormatException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\IncorrectNumberOfParametersException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\MethodNotFoundException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\NotFoundException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\NullReferenceException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\ObjectWasNotFoundException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\PropertyCannotBeSetException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\PropertyNotFoundException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\UnityStruct\AltUnityColor.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\UnityStruct\AltUnityKeyCode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\UnityStruct\AltUnityTextureFormat.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\UnityStruct\AltUnityVector2.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\UnityStruct\AltUnityVector3.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\UnknownErrorException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityDriver\WaitTimeOutException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\AltUnityBaseClassFindObjectsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\AltUnityFindObjectsOldWayCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\AltUnityReflectionMethodsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityActionFinishedCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityCallComponentMethodForObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityClickEventCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityClickOnScreenAtXyCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityClickOnScreenCustom.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityDeleteKeyPlayerPrefCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityDeletePlayerPrefCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityDragObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityDropObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityEnableLoggingCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindActiveObjectsByNameCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindAllObjectsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectByComponentCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectByNameCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectsByComponentCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectsByNameCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectsWhereNameContainsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityFindObjectWhereNameContainsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetAllCamerasCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetAllComponentsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetAllFieldsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetAllMethodsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetComponentPropertyCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetKeyPlayerPrefCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetScreenshotCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetScreenshotPNGCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetServerVersionCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetTextCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityGetTimeScaleCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityHighlightSelectedObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityHightlightObjectFromCoordinatesCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityHoldButtonCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityLoadSceneCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityMoveMouseCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityPointerDownFromObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityPointerEnterObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityPointerExitObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityPointerUpFromObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityScreenshotReadyCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityScrollMouseCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnitySetKeyPlayerPrefCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnitySetMultipointSwipeChainCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnitySetMultipointSwipeCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnitySetObjectComponentPropertyCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnitySetTextCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnitySetTimeScaleCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityTapCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityTiltCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Assets\AltUnityTester\AltUnityServer\Commands\AltUnityUnknowStringCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AuthApiClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AuthApiConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AuthController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AuthenticationStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AuthProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AuthTokenRefreshStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AutoBanController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AutoBanItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AutoScrollableView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\AutoScroller.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BadgeBumperSwapper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BadgeBumperView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BadgeEditView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BadgeItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BadgeScrollableSelector.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BadgeSwapper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BadgeView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BasicItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BattleLogView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIAdjust.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIBadge.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIBaseButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIBootstrap.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIButtonSound.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BICasualSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BICasualViewController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIColorDatabase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIColorManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIColorPalletteDatabase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIColorPalletteDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIColorPalletteManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIDynamicImage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIFadeViewItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILocalization.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogBonusRoundStart.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogIntervalBonus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogLeaderboardPrize.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogLTOAction.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogMatchRoundEnd.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogMatchRoundStart.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogPurchaseState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BILogWindowOpen.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIManualTimer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BINotificationManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIPaymentValidator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIPurchaseProfiler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIReloader.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BISaleItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIScoreboardEventBusController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIScrollPanel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIScrollSnap.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BISoundBankData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BISoundData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BISoundEvents.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BITabButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIToolTip.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BIUILineRenderer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BuffActorEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BuffView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BundleSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ButtonToggle.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\BuyDisplayInfo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\By.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CasualOffsetObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CasualReloader.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CasualViewMutex.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Censor.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ChoiceSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ChoiceSceneView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ChoiceView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CodeButtonController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CodeButtonsView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CollectionItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ColoredPrefabSwapper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ColorSchemeView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\Adjust.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustAndroid.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustAttribution.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustEnvironment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustEnvironmentExtension.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustEventFailure.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustEventSuccess.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustLogLevel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustLogLevelExtension.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustSessionFailure.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustSessionSuccess.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\AdjustUtils.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\JSON.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\JSONArray.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\JSONBinaryTag.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\JSONClass.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\JSONData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\JSONLazyCreator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\JSONNode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\adjust\sdk\test\AdjustTestOptions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Common\Api\GoogleApiClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Common\Api\PendingResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Common\Api\Result.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Common\Api\ResultCallback.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Common\Api\ResultCallbackProxy.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Common\Api\Status.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Common\ConnectionResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Games.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Games_BaseGamesApiMethodImpl.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Stats\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Stats\PlayerStatsObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Stats\Stats.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Stats\Stats_LoadPlayerStatsResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Stats\Stats_LoadPlayerStatsResultObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Google\Android\Gms\Games\Stats\StatsObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Uken\Core\Device.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Uken\Core\INative.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\com\Uken\Core\NativeAndroid.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ConfirmDeleteUserView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ConstructionItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ConstructionPageSubTabView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ConstructionPageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ConstructionSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ConstructionTabController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ConstructionViewController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ContextualTextView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CostItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CrashlyticsInit.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CrashTestTools.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\CureActorEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DeathActorEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DelayedProgressBar.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DictionaryHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DiffHealthActorEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DirectionAnimData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DropdownButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DyeEditView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DyeItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DynamicAdItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DynamicAdOrbit.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DynamicAdsHueShift.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DynamicAdsView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DynamicAdTransitionColour.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EAbilityEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EAbilityState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EBuyRefDataType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EBuyType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EFightActorEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EnjoyingGameView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ENumericDisplayType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EquipmentItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EquipmentItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EquipmentPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EquipmentSlotItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EquipmentTrait.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EquipmentTraitViewInstantiator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EquipmentView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ERuneSpinAnimationType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ESubTabSelectionType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EventQuestItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EventQuestView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\EventQueueable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Example_FilterAnInputField.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FakeBackendInventoryObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FeedbackPopup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FightActorController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FightActorEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FightActorView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FightSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FightSceneView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FPSCounterView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GameSettings.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GameSummaryView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GemsCountView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GlobalLeaderboardController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GlobalScalerContainer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GlobalSpeedBoosterItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Google\Developers\JavaInterfaceProxy.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Google\Developers\JavaObjWrapper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayAuthProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayCredentialRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayDataStore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayFileController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Android\AndroidTokenClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Achievement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\CommonTypesUtil.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\DataSource.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\DummyClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Events\EventVisibility.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Events\IEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Gravity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\InvitationReceivedDelegate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardCollection.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardStart.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardTimeSpan.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\MatchDelegate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\RealTimeMultiplayerListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\TurnBasedMatch.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\IDiscoveryListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\IMessageListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\InitializationStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\OnStateLoadedListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\ResponseStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\ConflictCallback.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\ConflictResolutionStrategy.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\IConflictResolver.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\SavedGameRequestStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\SavedGame\SelectUIStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\ScorePageToken.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\UIStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Video\IVideoClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\VideoCaptureMode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\VideoCaptureOverlayState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\VideoQualityLevel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\GameInfo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Android\AndroidClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\CallbackUtils.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\ConversionUtils.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Achievement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\AchievementManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\AndroidPlatformConfiguration.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Builder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\CaptureOverlayStateListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\CommonErrorStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\EndpointDiscoveryListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Event.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\EventManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\GameServices.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\InternalHooks.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Leaderboard.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\LeaderboardManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\MessageListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\MultiplayerInvitation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\MultiplayerParticipant.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnections.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnectionsBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnectionsStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnectionTypes.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\ParticipantResults.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Player.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\RealTimeEventListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\RealTimeMultiplayerManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\RealTimeRoom.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\RealTimeRoomConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\RealTimeRoomConfigBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Score.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\ScorePage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\ScoreSummary.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Sentinels.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\SnapshotManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\SnapshotMetadata.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\SnapshotMetadataChange.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\SnapshotMetadataChangeBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\StatsManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Status.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\SymbolLocation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\TurnBasedMatch.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\TurnBasedMatchConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\TurnBasedMatchConfigBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\TurnBasedMultiplayerManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Types.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\VideoCapabilities.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\VideoCaptureState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\VideoManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\IClientImpl.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\JavaUtils.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeEventClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeNearbyConnectionClientFactory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeNearbyConnectionsClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeRealtimeMultiplayerClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeSavedGameClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeTurnBasedMultiplayerClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\NativeVideoClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\AchievementManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\AndroidPlatformConfiguration.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\BaseReferenceHolder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\Callbacks.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\CaptureOverlayStateListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\EventManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\FetchResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\FetchScorePageResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\FetchScoreSummaryResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\GameServices.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\GameServicesBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\GetCaptureCapabilitiesResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\GetCaptureStateResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\IsCaptureAvailableResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\LeaderboardManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\MultiplayerInvitation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\MultiplayerParticipant.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeAchievement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeAppIdentifier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeConnectionRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeConnectionResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeEndpointDetails.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeEndpointDiscoveryListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeLeaderboard.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeMessageListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativePlayer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativePlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeRealTimeRoom.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeScore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeScoreEntry.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeScorePage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeScorePageToken.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeScoreSummary.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeSnapshotMetadata.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeSnapshotMetadataChange.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeStartAdvertisingResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeTurnBasedMatch.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeVideoCapabilities.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeVideoCaptureState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NearbyConnectionsManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NearbyConnectionsManagerBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\ParticipantResults.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PInvokeUtilities.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PlatformConfiguration.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PlayerSelectUIResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\RealTimeEventListenerHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\RealtimeManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\RealtimeRoomConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\RealtimeRoomConfigBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\SnapshotManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\StatsManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\TurnBasedManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\TurnBasedMatchConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\TurnBasedMatchConfigBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\VideoManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\UnsupportedSavedGamesClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\NearbyConnectionClientFactory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\OurUtils\Logger.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\OurUtils\Misc.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\OurUtils\PlatformUtils.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PlayGamesAchievement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PlayGamesClientFactory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PlayGamesLeaderboard.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PlayGamesLocalUser.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PlayGamesPlatform.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PlayGamesScore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PlayGamesUserProfile.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\PluginVersion.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\ReportProgress.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\TokenClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayLinkRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GPGSIds.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GradientEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GradientImage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GraphicEffectView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GuestCredentialRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GuestUnlinkRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\HighlightableItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\HoverCursor.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\HoverToggle.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IAbilityState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IAM2Game.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IAPStoreItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IBuffState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IColorable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IColorAnimator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IFightActorState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IHudMenuViewAudio.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IInfoText.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InboxMessageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InboxPopup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InboxView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InfoPopupButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InfoPopupPivot.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InfoPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InfoSpecialOfferEntryView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InfoSpecialOfferPopupButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InfoSpecialOfferPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IngredientView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InventoryApiClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InventoryApiConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InventoryErrorObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InventoryGetRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\InventoryStressTestScript.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IPositionAnimator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IRefreshableSlottableView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IResearchable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IResearchableItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IResearchableView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ISlotController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ISlottableView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ISlottedItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ISubTabItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ISubTabToggledHandler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ITag.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ItemConstants.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ItemConverterItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ItemConverterView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ItemLimit.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ItemLimitValidator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ItemModelViewInstantiator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IVolumeModeItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IWeighted.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LeaderboardEntryView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LeaderboardResultsMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LeaderboardResultsView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LeaderboardTierView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LeaderboardView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LinkResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LinkStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LoadoutAbilityView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LoadoutItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LoadoutPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LoadoutSettingPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LoadoutView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LocalizedText.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Log.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LogFirstPowerSustain.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LoginMethod.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LogMaxCapUpgrade.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\LogoutResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MachineSounds.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MatchState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MenuShortcuts.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MessageItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MiniEventItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MiniEventItemPool.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MiniEventItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MiniEventView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MiniLeaderboardView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\MiniQuestRewardSummaryView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\NativeAuthProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\NetworkErrorPopup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\NumberSpinner.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\OkPopup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\OKPopupMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\OKPopupNotification.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Opencoding\Console\NativeMethods.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PIIScrubberApiClient.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PIIScrubberApiConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PIIScrubberController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerActorController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerDataItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerDeathLogData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerPrefConstants.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PLayerPrefKeyType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerOrb.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerPageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerRadial.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerRadialAnimation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerRecipeView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerRune.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerTap.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PowerView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrefabSwapper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrestigeItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrestigeItemPopupInfoView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrestigeItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrestigeLevelItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrestigePopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrestigeSystemItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PrestigeView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProductionPageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProductionVolumeMode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProductViewItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProfileBannerView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProfileChangedMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProfileHeaderView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProfileItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProfilePageController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProfilePageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ProgressBar.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\PulsingAnimation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QAConsoleCall.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuantityTrackingProgressView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestCompleteView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestPageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestProgressLogData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestSceneView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\QuestViewBase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RandomLong.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RatingPopupDetector.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RatingPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RDScaleSetEntry.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RDStatusEffectImmuneToBuff.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RDStatusEffectReflectDamage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RDStatusEffectStatModifier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RDStatusEffectStun.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RecipeAutomationView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RecipeBoosterView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RecipeDifferentialView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RecipeItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RecipeOrbitter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RecipeUpgradableItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RecipeView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RefreshRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchableItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchablesPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchablesStoreView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchablesView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchableUnlockableItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchPageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchSlotItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ResearchView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RewardItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RewardSummaryView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RewardVisualizer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RunController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RuneAnimation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\RuntimeTests.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ScaleSetEntry.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SceneEncounterLogData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SceneItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ScoreboardSaveData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ScrollableSelector.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ScrubUserRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SectionView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SendResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SettingsHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SettingsPageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ShakeAnimData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SlottablePopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SlottableView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SlottedItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SnapListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SocketSettings.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SolidColourCircle.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SolidColourRectangle.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SoundCategory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SpeedBoosterItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SpeedBoosterPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SpeedBoosterSlotItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SplashSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SplashView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SplashViewController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StackTraceHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StatModifierKey.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StatusEffectImmuneToBuff.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StatusEffectReflectDamage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StatusEffectStatModifier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StatusEffectStun.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StoreInventoryItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StorePageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StoryLogItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StoryLogsView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StringExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\StunActorEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SubstanceView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SubTabsView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\SubTabView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TabButton.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TabController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TagItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TellUsWhyView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TextHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TextSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TextSceneView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TierRewardDescriptionView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TierRewardEntryView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TimeRemainingView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TitleConnectorItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TitleEditView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TitleItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TitleItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TitleScrollableSelector.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TitleSwapper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TouchConsoleCommands.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TouchConsoleInitializer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\TransformExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\BaseDirectoryController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\BaseFileController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\Device.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\Extensions\DictionaryExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\Extensions\SerializableDictionary.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\Extensions\StringExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\FileEncryption.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\FileSystemDirectoryController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\FileSystemFileController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\INative.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\IO\WebPlayerCommunication.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\JSONHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\NativeAndroid.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\Newtonsoft\UkenDictionaryConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenCore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenDelay.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenDirectory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenErrorData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenFile.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenLogger.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenPlayerPrefs.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenRequestType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenSubroutine.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenSubroutineController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\UkenTimer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\WebDirectoryController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\WebFileController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\WebRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Core\WebResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ABFilterConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ABGroupConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AbilitiesController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ActionController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ActionSceneControllerFactory.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AdConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AdConfigs.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AdLibController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AdsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Alert.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AlertEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AlertEvents.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Alerts.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AM2Message.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AM2MessageController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AM2MessageSave.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\AutomaticConversionController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\BaseProductView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\BattleReport.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualAnalog.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualAnalogData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualBootStrap.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualDataStore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualDataStoreController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualDataStoreModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualDynamicOfferSurfacePoint.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualEnvironment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualFacebook.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualGame.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualGameLoader.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualNotification.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualNotificationsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualSceneBackgroundController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualSceneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualSceneManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualSceneState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CasualTime.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CLogGameLogicConfigData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CLogSaleItemPurchaseState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\CLogStringData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ClubScoreboardData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ColorHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ConstructionController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Converter\ABFilterConfigConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicAdsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicAdState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicOffer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicOffers.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicOfferSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicOfferSets.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicSaleItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\DynamicSaleItemController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EBattleReportType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EDropTier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EntityType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EQuestMessageSource.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EquipmentController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EventSchedule.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EventTicket.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EventTicketItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\EventTickets.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ExternalAdProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\FacebookAccessToken.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\FacebookFriendsQueryResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\FacebookImageCacheEntry.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\FacebookSelfData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\FacebookUserData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Features.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\FinalizedReward.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\FTUEController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\GameObjectExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\GameSettings.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\GameTriggers.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\GameTriggerSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\GameTriggerType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IAPOrphanedProduct.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IAPProviderPurchaseComplete.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IAPProviderPurchaseFailure.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IAPProviderPurchaseRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IAPRecord.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IAPValiationCompleted.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IAPValiationStart.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IEventController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IItemModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ILocalNotification.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ImageSourceType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\InitZoneStateResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IRDItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IRDTicketEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IReadable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IRuntimeItemController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ISaleView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\IScoreboardEventBusListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ItemController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ItemConverterController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ItemFrames.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ItemLevelState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\JingotTests.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\ILeaderboardResultsListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\Leaderboard.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\LeaderboardController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\LeaderboardDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\LeaderboardEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\LeaderboardEntries.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\LeaderboardType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Leaderboards\LeaderboardViewConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\LeagueSavedData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ListHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\LoadoutController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Localizations.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\LocalNotificationEvents.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\LocalNotifications.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Logic\LogicController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\LTOs.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\LTOSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\LTOSets.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\MetadataItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\MiniEventController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\NetworkStatusCentre.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\OfflineGenerationController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\PowerController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\PrestigeController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Product.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ProductController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ProductDisplayTextType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\PurchaseFinalizeRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\PurchaseItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\PurchaseItems.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\PurchaseProfiler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\QualifierComparison.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\QualifierData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\QuestController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\QuestUIMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RankedEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDAdConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDAdsConfigGroup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDAlert.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDAlertEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDAM2Message.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDDynamicOffer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDDynamicOfferSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDDynamicSaleItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDEventSchedule.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDEventTicketItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDFeature.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDGameSetting.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDGameTrigger.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDJingotTest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDLocalization.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDLocalNotification.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDLocalNotificationEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDLTO.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDLTOSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDProduct.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDPurchaseItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDRepeatingEventSchedule.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDReward.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDRewardGroup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDRewardScaleSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDSale.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDSaleItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDStoreItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDTierDropRate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDTierDropSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDTimeSlot.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDTSO.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDUserProfileField.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDUserSegment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RDVIPTier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ReadableRewardTypeInfo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RecipeController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RecipeDifferentialController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RepeatingEventSchedule.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RepeatingEventScheduleIterationType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ResearchController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ResearchUIMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Reward.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RewardGroup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RewardGroupsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RewardScaleSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeAdsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeDataCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeItemModelDataCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeRewardsCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeStoreItemCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\RuntimeVisiblyUnlockableDataCache.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Sale.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SaleItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SaleItemController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SaleItemDisplayText.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Sales.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SalesRecord.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SalesRecordController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SalesRecordV2.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SaleWithBonusItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ScaleSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ScoreboardEventBusController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ScoreboardEventBusEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\AddedToCollectionSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\BatchableOperation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\InventoryBatchableOperation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\InventoryUpdatedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\ISignalsAndStorageListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\LeaderboardBatchableOperation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\LevelUpSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\Signal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Signals\SignalsAndStorageController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\SpeedBoosterController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\StoreItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\Stores.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\StoryLogController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\StoryLogUIMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\TeamScoreboardData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\TextHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\TierDropRate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\TierDropSet.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\TimeSlot.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\TSOs.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UkenAuth.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserProfileField.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserProfileFields.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserProfiler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserQualifier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserQualifierComparisons.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserScoreboardData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserSegment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\UserSegments.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ValidateJingotFilter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\Animation\AnimViewBaseHideBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\Animation\AnimViewBaseShowBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CarouselPopup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CasualTabbedView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CasualView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CasualViewAnimated.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CasualViewBase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CasualViewController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CasualViewFadeItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\CasualViewItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\View\PopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\VIPTier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\VIPTiers.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\WebGLHack.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\Casual\ZoneController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Framework\UkenCredential.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Legacy\UkenDevice.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Adjust\UkenAdjust.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Advertising\AdController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\AID\AIDController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\AID\AIDRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\AM2AnimationExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnim.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimBase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimChain.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimEase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimEaseType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimFloat.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimGraphic.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimImage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimOutline.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimTransform.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimTraversal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Animation\UkenAnimTraversalType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\CategoryInitData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\DefaultEvents.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\SoundBankDictionary.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\SoundEventDictionary.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSound.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSoundBank.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSoundBankData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSoundController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSoundData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSoundEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSoundModifier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Audio\UkenSoundPlaybackType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\FacebookLinkStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\UkenAuthCredential.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\UkenAuthData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\UkenAuthLoginResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\UkenAuthProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\UkenAuthRefreshResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\UkenLinkResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Authentication\UkenUnlinkResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\IAPDefinitionRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\PurchaseCancelRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\PurchaseStartRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPaymentProduct.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPaymentProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPaymentTransaction.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPaymentValidationResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPaymentValidator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPurchasePayload.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPurchasePlatform.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPurchaseResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UkenPurchaseType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UnclaimedPurchaseRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\IAP\UnityIAP_PaymentProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\GetMessages.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\Inbox.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\InboxMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\Internal\InboxData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\Internal\InboxMessageData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\MarkMessagesAsRead.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\MarkMessagesAsSeen.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inbox\PostMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\IEquipmentItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\IInventoryProgressTracker.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\IItemModelIndexer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\InventoryController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\InventoryInternal\BaseInventoryItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\InventoryItemPool.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\InventoryRevision.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\InventoryRevisionResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\InventoryTokenPayload.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\Item.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\ItemMinimalDetails.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\ItemReferenceIndex.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\ITraitAppender.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Inventory\ITraitInterface.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Jingot\ABFilterFunctions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Jingot\ABTestGroup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Jingot\JingotController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Jingot\JingotEntityType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Jingot\JingotRunningTestsRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Jingot\JingotWebRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceGetLeagueRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceGetLeagueResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceGetSeasonRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceGetSeasonResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceGetTierRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceGetTierResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceLeague.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServicePostScoreRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceRank.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceSeason.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\LeagueService\LeagueServiceTier.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Metrics\BaseMetric.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Metrics\CounterMetric.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Metrics\GaugeMetric.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Metrics\MetricsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Metrics\MetricsPayload.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Network\INetworkStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Notifications\Notification.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Notifications\NotificationData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Notifications\NotificationManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Notifications\NotificationsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Observe\IUkenObserver.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Observe\UkenObservable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Observe\UkenUnsubscriber.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Parsers\MiniJSON.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Parsers\MiniJsonExtensions.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\InboxRewardMessageData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\Internal\GetMessagesRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\Internal\MarkMessageAsReadRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\Internal\PlatformInboxResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\Internal\PlatformInboxResponseCode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\Internal\SendMessagesRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\Internal\UserInboxResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\PlatformInbox\PlatformInbox.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Profiling\UkenProfiler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Profiling\UkenProfilerData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\BaseDataStore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\BaseEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\BaseEntityDocument.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\CasualDataCacheController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\BaseProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\ChecksumRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\ChecksumResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\MultiPartResourceProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\NetworkProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\NetworkProviderRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\PairedProviderRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataProviders\ResourceProvider.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataSource.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataStore.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DataStoreController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DepotAttributeDropdown.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DepotController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DepotEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DepotReference.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DeprecatedAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DescriptionAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DropdownAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DropdownNameAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DropDownStringTypeAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\DynamicEntityReference.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\EntityReference.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\EnumDropdownAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\FieldPairReference.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\GroupAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\IBaseDepotEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\IBaseEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\MultiEntityReference.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\RDAltValue.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\RegisterDepotEditorAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\RequiredAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\StoreMetaData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\StoreModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\UseDepotEditorAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\ValidateAttribute.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\VersionPlatform.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\ReferenceData\VersionRecord.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardEntity.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardPostScoreData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardPostScoreRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardPostScoreResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardResultRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardResultResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardScoreData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardScoreQueryRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardScoreQueryResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardTotalEntitiesData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardTotalEntitiesQuery.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Scoreboards\ScoreboardTotalEntitiesQueryResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\TeamService\TeamAssignmentMethod.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\TeamService\TeamErrorCode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\TeamService\TeamEventInfo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\TeamService\TeamRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\TeamService\TeamResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\TeamService\TeamsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\UINotification\EEmitType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\UINotification\UINotification.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\UkenTime\UkenTimeController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\UserAnalytics\UserAnalyticsController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\UserAnalytics\UserAnalyticsData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\UserAnalytics\UserProfileData.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Web\UkenImageCacher.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Web\UkenRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Web\UkenWebConfig.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Web\UkenWebController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Library\Web\UkenWWW.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Uken\Platform\Android.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenAnimationEffect.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenAssert.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenAudioClip.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenAudioLoop.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenEnvironment.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenLinkResponse.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenMath.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UkenSettings.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRateAppInfo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRateDebug.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRateEventHandler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRateGUIScript.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRateMarketType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRateMiniJSON\Json.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UniRatePlayerPrefs.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\BlockType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\CompressionMode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\CopyEncoder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\Crc32Helper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\DeflateInput.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\DeflaterManaged.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\DeflateStream.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\DeflateStreamAsyncResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\FastEncoder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\FastEncoderStatics.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\FastEncoderWindow.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\GZipConstants.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\GZipDecoder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\GZipFormatter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\GZipStream.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\HuffmanTree.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\IDeflater.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\IFileFormatReader.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\IFileFormatWriter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\Inflater.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\InflaterState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\InputBuffer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\InvalidDataException.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\Match.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\OutputBuffer.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\OutputWindow.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Unity\IO\Compression\SR.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UnityEngine\UI\Extensions\UIParticleSystem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UnlinkResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UnlockableRecipeComponentView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UnlockItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UntouchedAlertView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UntouchedUIMessage.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UpdatesController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UpgradableItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\URLImagePopup.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UserController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Utilities\ObjectPoolController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Utilities\Pool.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VanityTitleView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VIPStatusController.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VIPStatusItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VIPStatusPopUpView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VIPStatusState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VIPStatusView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VisiblyUnlockableItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\VolumeMultiplierView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ZoneIntroView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ZoneItem.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ZoneItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ZonePageView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ZoneState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\ZoneView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp-firstpass\NativeReviewRequest.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp-firstpass\UniRatePlugin.cs" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Debug_LightMeter.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_MultiScaleVO.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_TemporalAntialiasing.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Debug_Vectorscope.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Texture2DLerp.shader" />
+     <None Include="Assets\Shader\UI_BadgeShiny.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_FinalPass.shader" />
+     <None Include="Assets\Shader\UI_BadgeHolofoil.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_MotionBlur.shader" />
+     <None Include="Assets\TextAsset\LogEmailHeader.txt" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Debug_Histogram.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Bloom.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_DeferredFog.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Lut2DBaker.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Debug_Overlays.shader" />
+     <None Include="Assets\Resources\mystery.txt" />
+     <None Include="Assets\Shader\Custom_Geometry_Wireframe.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_SubpixelMorphologicalAntialiasing.shader" />
+     <None Include="Assets\Shader\Custom_Unlit Texture Colored.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_GrainBaker.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_CopyStd.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_DepthOfField.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Copy.shader" />
+     <None Include="Assets\TextAsset\LogEmailFooter.txt" />
+     <None Include="Assets\Shader\UI_GodRays.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_ScreenSpaceReflections.shader" />
+     <None Include="Assets\Resources\profanity-blacklist.txt" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_ScalableAO.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Uber.shader" />
+     <None Include="Assets\Resources\profanity-whitelist.txt" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_CopyStdFromTexArray.shader" />
+     <None Include="Assets\Resources\environment.txt" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_Debug_Waveform.shader" />
+     <None Include="Assets\Shader\UI_BadgeSparkle.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_CopyStdFromDoubleWide.shader" />
+     <None Include="Assets\Shader\Hidden_PostProcessing_DiscardAlpha.shader" />
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Newtonsoft.Json.csproj">
+      <Project>{D9EECBB0-7296-3435-2B23-B129812724ED}</Project>      <Name>Newtonsoft.Json</Name>    </ProjectReference>
+    <ProjectReference Include="Firebase.Platform.csproj">
+      <Project>{0EBA965E-F0AA-1157-7430-196136F34B03}</Project>      <Name>Firebase.Platform</Name>    </ProjectReference>
+    <ProjectReference Include="Apple.csproj">
+      <Project>{4AD2D425-A9D4-BB02-7451-267C655A5D02}</Project>      <Name>Apple</Name>    </ProjectReference>
+    <ProjectReference Include="Stores.csproj">
+      <Project>{14F1A00A-66CA-9195-6B7F-97747C0B4AD7}</Project>      <Name>Stores</Name>    </ProjectReference>
+    <ProjectReference Include="Opencoding.LogHistory.csproj">
+      <Project>{59A4A2F1-311A-7ED6-7E65-5ADAAAEE9530}</Project>      <Name>Opencoding.LogHistory</Name>    </ProjectReference>
+    <ProjectReference Include="Facebook.Unity.Settings.csproj">
+      <Project>{BAE6D766-9A70-FAB6-AAD9-A07806910474}</Project>      <Name>Facebook.Unity.Settings</Name>    </ProjectReference>
+    <ProjectReference Include="Com.Uken.Native-Helpers.Runtime.csproj">
+      <Project>{1CDD0D13-374F-1556-FBFA-E8929B90CA3A}</Project>      <Name>Com.Uken.Native-Helpers.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="Common.csproj">
+      <Project>{1A8FF631-A364-9EC8-A8CF-B64865E81EF1}</Project>      <Name>Common</Name>    </ProjectReference>
+    <ProjectReference Include="winrt.csproj">
+      <Project>{8D5673B2-9922-6F78-B247-E758FAE458E1}</Project>      <Name>winrt</Name>    </ProjectReference>
+    <ProjectReference Include="fastJSON.csproj">
+      <Project>{CC7D98C4-5031-F9DB-5C5E-2D8BB7C9155E}</Project>      <Name>fastJSON</Name>    </ProjectReference>
+    <ProjectReference Include="Il2CppDummyDll.csproj">
+      <Project>{E58D63EA-0722-1E23-47F7-88E51D678652}</Project>      <Name>Il2CppDummyDll</Name>    </ProjectReference>
+    <ProjectReference Include="Firebase.Crashlytics.csproj">
+      <Project>{3D9CFD19-96EA-9E64-5009-99A4825B8864}</Project>      <Name>Firebase.Crashlytics</Name>    </ProjectReference>
+    <ProjectReference Include="Opencoding.Console.csproj">
+      <Project>{8D3A8AB9-0014-C7F2-5DE0-91DD73164D08}</Project>      <Name>Opencoding.Console</Name>    </ProjectReference>
+    <ProjectReference Include="Com.Uken.Analog.Runtime.csproj">
+      <Project>{C6DC5E0C-50C5-AC74-755D-6D72121E80D3}</Project>      <Name>Com.Uken.Analog.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="Facebook.Unity.Android.csproj">
+      <Project>{0B19AF9B-C69E-C350-9F3F-3C312DBADE20}</Project>      <Name>Facebook.Unity.Android</Name>    </ProjectReference>
+    <ProjectReference Include="Opencoding.Shared.csproj">
+      <Project>{72D3BB45-23E6-5B2E-8951-74443734D8D7}</Project>      <Name>Opencoding.Shared</Name>    </ProjectReference>
+    <ProjectReference Include="Opencoding.CommandHandlers.csproj">
+      <Project>{CF27403C-3DF9-BA1B-7748-37A79C5FC430}</Project>      <Name>Opencoding.CommandHandlers</Name>    </ProjectReference>
+    <ProjectReference Include="Com.Uken.ApiClient.Runtime.csproj">
+      <Project>{2D78906D-6EF0-E3C6-5345-0FC4B6371F64}</Project>      <Name>Com.Uken.ApiClient.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="Facebook.Unity.csproj">
+      <Project>{56A3069E-C09E-8CB9-BB76-55300E437E2E}</Project>      <Name>Facebook.Unity</Name>    </ProjectReference>
+    <ProjectReference Include="Firebase.App.csproj">
+      <Project>{C7FC7F38-98A4-A12D-0D3D-D812134D5762}</Project>      <Name>Firebase.App</Name>    </ProjectReference>
+    <ProjectReference Include="com.uken.policy.runtime.csproj">
+      <Project>{3971CDF8-53ED-7ACC-E56E-B33B4B68D7E6}</Project>      <Name>com.uken.policy.runtime</Name>    </ProjectReference>
+    <ProjectReference Include="mopub.csproj">
+      <Project>{CA30CBAB-3A44-A72C-6FD4-FBBD609F2CAD}</Project>      <Name>mopub</Name>    </ProjectReference>
+    <ProjectReference Include="Com.Uken.Extensions.Runtime.csproj">
+      <Project>{83155101-8D92-A0D4-D516-99CE99424F77}</Project>      <Name>Com.Uken.Extensions.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="Firebase.TaskExtension.csproj">
+      <Project>{31964B1E-7BEA-D0CE-9113-79E03F1775A6}</Project>      <Name>Firebase.TaskExtension</Name>    </ProjectReference>
+    <ProjectReference Include="Firebase.Analytics.csproj">
+      <Project>{4588C425-B4F6-5DDB-ABCC-1172E5078D3F}</Project>      <Name>Firebase.Analytics</Name>    </ProjectReference>
+    <ProjectReference Include="Com.Uken.Adlib.Runtime.csproj">
+      <Project>{A730DAF1-D0EE-FEDA-749C-83BD9281F0A0}</Project>      <Name>Com.Uken.Adlib.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{54F3F782-230B-FBB2-90C9-BF5E2E535C95}</Project>      <Name>Unity.Postprocessing.Runtime</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D9EECBB0-7296-3435-2B23-B129812724ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Newtonsoft.Json</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2018_4_11;UNITY_2018_4;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;NET_LEGACY;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.4.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.4.11f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonArray.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonBinary.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonBinaryType.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonBinaryWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonObject.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonObjectId.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonProperty.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonReader.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonRegex.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonString.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonToken.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonType.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonValue.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Bson\BsonWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\ConstructorHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\BinaryConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\BsonObjectIdConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\CustomCreationConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\DateTimeConverterBase.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\HashSetConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\IsoDateTimeConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\IXmlDeclaration.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\IXmlDocument.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\IXmlDocumentType.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\IXmlElement.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\IXmlNode.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\JavaScriptDateTimeConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\KeyValuePairConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\RegexConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\StringEnumConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\VectorConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\VersionConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XAttributeWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XCommentWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XContainerWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XDeclarationWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XDocumentTypeWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XDocumentWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XElementWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XmlDeclarationWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XmlDocumentTypeWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XmlDocumentWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XmlElementWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XmlNodeConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XmlNodeWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XObjectWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XProcessingInstructionWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Converters\XTextWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\DateFormatHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\DateParseHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\DateTimeZoneHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\DefaultValueHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\FloatFormatHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\FloatParseHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Formatting.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\IArrayPool.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\IJsonLineInfo.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonArrayAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonConstructorAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonContainerAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonContainerType.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonConvert.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonConverterAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonConverterCollection.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonDictionaryAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonException.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonExtensionDataAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonIgnoreAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonObjectAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonPosition.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonPropertyAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonReader.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonReaderException.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonRequiredAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonSerializationException.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonSerializer.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonSerializerSettings.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonTextReader.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonTextWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonToken.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\JsonWriterException.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\CommentHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\Extensions.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\IJEnumerable.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JArray.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JConstructor.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JContainer.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JEnumerable.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JObject.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JProperty.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JPropertyDescriptor.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JPropertyKeyedCollection.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JRaw.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonLoadSettings.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonMergeSettings.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\ArrayIndexFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\ArrayMultipleIndexFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\ArraySliceFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\BooleanQueryExpression.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\CompositeExpression.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\FieldFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\FieldMultipleFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\JPath.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\PathFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\QueryExpression.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\QueryFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\QueryOperator.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JsonPath\ScanFilter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JToken.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JTokenEqualityComparer.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JTokenReader.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JTokenType.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JTokenWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\JValue.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\LineInfoHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\MergeArrayHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Linq\MergeNullValueHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\MemberSerialization.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\MetadataPropertyHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\MissingMemberHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\NullValueHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\ObjectCreationHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\PreserveReferencesHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\ReadType.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\ReferenceLoopHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Required.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\CachedAttributeGetter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\CamelCasePropertyNamesContractResolver.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\DefaultContractResolver.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\DefaultContractResolverState.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\DefaultReferenceResolver.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\DefaultSerializationBinder.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\DiagnosticsTraceWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ErrorContext.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ErrorEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ExtensionDataGetter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ExtensionDataSetter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\IAttributeProvider.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\IContractResolver.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\IReferenceResolver.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ITraceWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\IValueProvider.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonArrayContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonContainerContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonContractType.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonDictionaryContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonFormatterConverter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonISerializableContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonLinqContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonObjectContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonPrimitiveContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonProperty.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonPropertyCollection.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonSerializerInternalBase.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonSerializerInternalReader.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonSerializerInternalWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonSerializerProxy.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonStringContract.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\JsonTypeReflector.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\MemoryTraceWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ObjectConstructor.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\OnErrorAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ReflectionAttributeProvider.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ReflectionValueProvider.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\ResolverContractKey.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\SerializationCallback.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\SerializationErrorCallback.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\TraceJsonReader.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Serialization\TraceJsonWriter.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Shims\PreserveAttribute.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\StringEscapeHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\TypeNameHandling.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\Base64Encoder.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\BidirectionalDictionary.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\BufferUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\CollectionUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\CollectionWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ConvertUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\Creator.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\DateTimeParser.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\DateTimeUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\DictionaryWrapper.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\EnumUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\EnumValue.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\IWrappedCollection.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\IWrappedDictionary.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\JavaScriptUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\JsonTokenUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\LateBoundReflectionDelegateFactory.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\MathUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\MethodCall.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\MiscellaneousUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ParseResult.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ParserTimeZone.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\PrimitiveTypeCode.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\PropertyNameTable.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ReflectionDelegateFactory.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ReflectionMember.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ReflectionObject.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ReflectionUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\StringBuffer.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\StringReference.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\StringReferenceExtensions.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\StringUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ThreadSafeStore.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\TypeExtensions.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\TypeInformation.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\Utilities\ValidationUtils.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft\Json\WriteState.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\AddingNewEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\AddingNewEventHandler.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\INotifyCollectionChanged.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\INotifyPropertyChanging.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\NotifyCollectionChangedAction.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\NotifyCollectionChangedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\NotifyCollectionChangedEventHandler.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\PropertyChangingEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Newtonsoft.Json\System\ComponentModel\PropertyChangingEventHandler.cs" />
+     <None Include="Assets\Scripts\Newtonsoft.Json\Newtonsoft.Json.asmdef" />
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FileSystemHttpModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Il2CppDummyDll.csproj">
+      <Project>{E58D63EA-0722-1E23-47F7-88E51D678652}</Project>      <Name>Il2CppDummyDll</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
