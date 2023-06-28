@@ -11,4 +11,4 @@ So I dug up my latest install and decompiled it (thanks, @ds5678!)
 1. Remove network requirement for sign-in
 2. Remove "new content" bug
 
-(Join our Discord!)[https://discord.gg/tK94fydhVq]
+[Join our Discord!](https://discord.gg/tK94fydhVq)
