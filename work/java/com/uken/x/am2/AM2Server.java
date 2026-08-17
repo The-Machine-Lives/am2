@@ -348,7 +348,8 @@ public class AM2Server implements Runnable {
     }
 
     private Reply jingotAssignments() {
-        return new Reply(200, "{\"experiment_assignments\":[],\"assignments\":[]}");
+        // must be a json array. the client deserializes it into List<ABTestGroup>
+        return new Reply(200, "[]");
     }
 
     private Reply loginGuest(String body) throws Exception {
@@ -391,8 +392,9 @@ public class AM2Server implements Runnable {
         out.put("access_token", makeToken(userId));
         out.put("refresh_token", makeToken(userId));
         out.put("credential", storedCred);
+        // stays seconds, the client reads it back as int32
         out.put("userCreationDateTime", created);
-        out.put("timestamp", String.valueOf(nowSeconds()));
+        out.put("timestamp", String.valueOf(nowMillis()));
         out.put("user_id", userId);
         return json(out);
     }
@@ -403,7 +405,7 @@ public class AM2Server implements Runnable {
                 : acct.optString("user_id", UUID.randomUUID().toString());
         JSONObject out = new JSONObject();
         out.put("access_token", makeToken(userId));
-        out.put("timestamp", String.valueOf(nowSeconds()));
+        out.put("timestamp", String.valueOf(nowMillis()));
         return json(out);
     }
 
@@ -416,20 +418,26 @@ public class AM2Server implements Runnable {
         payload.put("iss", "am2-offline");
         payload.put("sub", userId);
         payload.put("iat", String.valueOf(now));
-        payload.put("exp", String.valueOf(now + 10L * 365L * 24L * 3600L));
+        // exp is parsed with int32 so it must not overflow
+        payload.put("exp", String.valueOf(Math.min(now + 10L * 365L * 24L * 3600L, 2147483647L)));
         return b64url(header.toString()) + "." + b64url(payload.toString()) + ".offline";
     }
 
     private JSONObject serverInfo() throws Exception {
         JSONObject out = new JSONObject();
-        out.put("timestamp", String.valueOf(nowSeconds()));
-        out.put("server_time", nowSeconds());
+        out.put("timestamp", String.valueOf(nowMillis()));
+        out.put("server_time", nowMillis());
         out.put("maintenance", false);
         return out;
     }
 
     private static long nowSeconds() {
         return System.currentTimeMillis() / 1000L;
+    }
+
+    // the client wants unix millis here. seconds put the game in 1970
+    private static long nowMillis() {
+        return System.currentTimeMillis();
     }
 
     private static String b64url(String s) {

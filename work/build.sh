@@ -25,7 +25,7 @@ fi
 for d in apk/lib/*/; do echo "      $(basename "$d"): $(ls "$d" | wc -l) libs"; done
 
 echo "[*] apktool b"
-"$JAVA" -jar "$AM2_TOOLS/apktool.jar" b apk -o am2-unsigned.apk 2>&1 | tail -3
+"$JAVA" -jar "$APKTOOL_JAR" b apk -o am2-unsigned.apk 2>&1 | tail -3
 
 if [ -n "$ZIPALIGN" ]; then
   echo "[*] zipalign"

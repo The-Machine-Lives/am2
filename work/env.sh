@@ -118,7 +118,11 @@ for _j in $_jars; do
   BAKSMALI_CP="${BAKSMALI_CP:+$BAKSMALI_CP$_sep}$_p"
 done
 
-export AM2_ROOT AM2_WORK AM2_TOOLS JAVA JAVAC KEYTOOL JAVA_MAJOR
+# java needs a windows path. msys converts it unless MSYS_NO_PATHCONV is set
+APKTOOL_JAR="$AM2_TOOLS/apktool.jar"
+command -v cygpath >/dev/null 2>&1 && APKTOOL_JAR="$(cygpath -m "$APKTOOL_JAR")"
+
+export AM2_ROOT AM2_WORK AM2_TOOLS JAVA JAVAC KEYTOOL JAVA_MAJOR APKTOOL_JAR
 export ANDROID_HOME BUILD_TOOLS ANDROID_JAR ZIPALIGN KEYSTORE BAKSMALI_CP PY
 
 am2_env_summary() {

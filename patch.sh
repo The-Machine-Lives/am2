@@ -49,7 +49,7 @@ echo "      base.apk sha256:$SUM..."
 
 echo "[2/9] apktool decode"
 rm -rf apk
-"$JAVA" -jar "$AM2_TOOLS/apktool.jar" d -f -o apk base.apk 2>&1 | tail -2
+"$JAVA" -jar "$APKTOOL_JAR" d -f -o apk base.apk 2>&1 | tail -2
 
 echo "[3/9] repoint the backend URLs at the bundled server"
 "$PY" patch_urls.py | tail -7
